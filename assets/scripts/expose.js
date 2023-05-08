@@ -26,7 +26,9 @@ function init() {
 		if(hornAudio.src.includes('party-horn.mp3')){
 			jsConfetti.addConfetti();
 		}
-		hornAudio.play();
+		if(hornAudio.src.includes('assets/audio')){
+			hornAudio.play();
+		}
 	});
 
 	const volumeControl = document.querySelector('#volume');
